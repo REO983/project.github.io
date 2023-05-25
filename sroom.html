@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms</title>
+    <link rel="stylesheet" href="sheet1.css">
+    <style>
+        /* For screens smaller than 600px, display the sections as a vertical list */
+        @media screen and (max-width: 600px) {
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            section {
+                margin-bottom: 50px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        /* For screens larger than 600px, display the sections as a horizontal row */
+        @media screen and (min-width: 601px) {
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            section {
+                width: calc(33.33% - 10px);
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        #bon {
+            text-decoration: none;
+        }
+
+        .il {
+            display: inline-block;
+            padding: 0px 5px;
+            background-color: #0d6efd;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .il:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+
+<body bgcolor="" oncontextmenu="return false">
+    <br>
+    <marquee bgcolor="#1C335F" behavior="scroll">
+        <h1>Welcome To Hostel Management Information
+            System</h1>
+    </marquee>
+    <br>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="sndex.php">Home</a></li>
+                <li><a href="sAbout_us_hostal.html">About Us</a></li>
+                <li><a href="sroom.html">Rooms</a></li>
+                <li><a href="smess and food.html">Mess and Food</a></li>
+                <li><a href="sfacilities.html">Facilities</a></li>
+                <li><a href="slocation.html">Location</a></li>
+                <li><a href="sreservation.php">Reservation</a></li>
+                <li><a href="scontact_us_hostal.php">Contact Us</a></li>
+
+            </ul>
+            <ul float="right">
+                <li class="right-align" style=" background-color: #ccc;font-size: 130%;">
+                    <a href="#" class="il" style=" background-color:green;">Student</a>
+                    <a href="index.html" class="il">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <div class="center">
+        <center>
+            <h1>Hostal Room of Sri Sharda Group of Institution</h1>
+
+        </center>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <section>
+            <h2>Single Room</h2>
+            <img src="srimg.jpeg" alt="Single Room">
+            <p>Our single rooms offer a comfortable and cozy stay for solo students. Each room is equipped with a
+                singlebed, a desk, and a chair.</p>
+            <ul>
+                <li><strong>Price:</strong> 25,000/- per sem</li>
+                <li><strong>Capacity:</strong> 1 person</li>
+            </ul>
+            <button> <a id="bon" href="reservation.php"> Book Now</a></button>
+        </section>
+        <section>
+            <h2>Double Room</h2>
+            <img src="drimg.jpeg" alt="Double Room">
+            <p>Our double rooms are perfect for student frends together. Each room is equipped with a
+                queen-sized bed, a desk, and a chair.</p>
+            <ul>
+                <li><strong>Price:</strong> 50,000/- per sem</li>
+                <li><strong>Capacity:</strong> 2 persons</li>
+            </ul>
+            <button> <a id="bon" href="reservation.php"> Book Now</a></button>
+        </section>
+        <section>
+            <h2>Dorm Room</h2>
+            <img src="drimg.jpg" alt="Dorm Room" height="305px">
+            <p>Our dorm rooms are perfect for budget-conscious students . Each room is equipped with three beds, a desk,
+                and a chair.</p>
+            <ul>
+                <li><strong>Price:</strong> 20,000/- per person per sem</li>
+                <li><strong>Capacity:</strong> 3 persons</li>
+            </ul>
+            <button> <a id="bon" href="reservation.php"> Book Now</a></button>
+        </section>
+    </main>
+    <br><br>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
